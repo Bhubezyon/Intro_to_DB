@@ -27,10 +27,10 @@ CREATE TABLE Orders (order_id INT AUTO_INCREMENT PRIMARY KEY,
                      FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
                      );
 
-CREATE TABLE Order_details (order_detail_id INT AUTO PRIMARY KEY,
+CREATE TABLE Order_Details (order_detail_id INT AUTO PRIMARY KEY,
                             order_id INT NOT NULL,
                             book_id INT NOT NULL,
-                            quantity INT NOT NULL,
+                            quantity DOUBLE INT NOT NULL,
                             unit_price DECIMAL(10, 2) NOT NULL,
-                            FOREIGN KEY (ORDER_ID) REFERENCES ORDERS(ORDER_ID),
-                            FOREIGN KEY (BOOK_ID) REFERNCES BOOKS(BOOK_ID));
+                            FOREIGN KEY (order_id) REFERENCES Orders(ORDER_ID),
+                            FOREIGN KEY (book_id) REFERNCES Books(book_id));
