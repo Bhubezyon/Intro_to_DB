@@ -1,8 +1,8 @@
 --task_2.sql
 --Create all tables for the alx_book_store database
 
-CREATE TABLE AUTHORS (AUTHOR_ID INT AUTO_INCREMENT PRIMARY KEY,
-                      AUTHOR_NAME VARCHAR(200) NOT NULL,
+CREATE TABLE AUTHORS (author_id INT AUTO_INCREMENT PRIMARY KEY,
+                      author_name VARCHAR(200) NOT NULL,
                       BIO TEXT);
 
 CREATE TABLE BOOKS (BOOK_ID INT AUTO_INCREMENT PRIMARY KEY,
