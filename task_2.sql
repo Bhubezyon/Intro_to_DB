@@ -24,7 +24,7 @@ CREATE TABLE Orders (order_id INT AUTO_INCREMENT PRIMARY KEY,
                      customer_id INT NOT NULL,
                      order_date DATETIME DEFAULT CURRENT_TIME STAMP,
                      STATUS VARCHAR(50) DEFAULT 'PENDING',
-                     FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMER(CUSTOMER_ID)
+                     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
                      );
 
 CREATE TABLE Order_details (order_detail_id INT AUTO PRIMARY KEY,
