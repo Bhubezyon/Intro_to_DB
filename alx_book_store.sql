@@ -16,7 +16,7 @@ CREATE TABLE Books (book_id INT AUTO_INCREMENT PRIMARY KEY,
 CREATE TABLE Customers (customer_id INT AUTO_INCREMENT PRIMARY KEY,
                         customer_name VARCHAR(215) NOT NULL,
                         email VARCHAR(215) UNIQUE NOT NULL,
-                        address text);
+                        address TEXT);
 
 CREATE TABLE Orders (order_id INT AUTO_INCREMENT PRIMARY KEY,
                     order_id INT NOT NULL,
