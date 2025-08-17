@@ -2,9 +2,8 @@
 --Create all tables for the alx_book_store database
 
 CREATE TABLE AUTHORS (AUTHOR_ID INT AUTO_INCREMENT PRIMARY KEY,
-                      FIRST_NAME VARCHAR(100) NOT NULL,
-                      LAST_NAME VARCHAR(100) NOT NULL,
-                      BIO TEXT);
+                      AUTHOR_NAME VARCHAR(200) NOT NULL,
+                      BIO TEXT
 
 CREATE TABLE BOOKS (BOOK_ID INT AUTO_INCREMENT PRIMARY KEY,
                     TITLE VARCHAR(255) NOT NULL,
